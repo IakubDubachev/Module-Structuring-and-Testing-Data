@@ -16,7 +16,7 @@
 
 const calculateBodyMassIndex = ( weightInKilograms, heightInMetres ) => {
     const bmi = weightInKilograms / ( heightInMetres * heightInMetres );
-    return Math.round( bmi * 10 ) / 10; // will round the value to 1 dp, can also use .toFixed() but will convert value to a string
+    return Math.round( bmi * 10 ) / 10; // will round the value to 1 dp, can also use .toFixed( 1 ) but will convert value to a string
 }
 
 console.log( calculateBodyMassIndex( 70, 1.73 ) );
