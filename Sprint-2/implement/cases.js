@@ -18,4 +18,13 @@ const convertToUpperCamelCase = input => {
     return input.split( ' ' ).map( str => str.toUpperCase() ).join( '_' );
 }
 
+// .split( ' ' ) splits the string at each space and adds each element to an array
+// "lord of the rings" will therefore become [ "lord", "of", "the", "rings" ]
+
+// .map() will loop over each element in the array, and return the result of str.toUpperCase() to a new array.
+// [ "lord", "of", "the", "rings" ] will therefore become [ "LORD", "OF", "THE", "RINGS" ]
+
+// .join( '_' ) will convert the values in an array to a string, joining each element in the array with the value provided, in this case an underscore
+// [ "LORD", "OF", "THE", "RINGS" ] will therefore become "LORD_OF_THE_RINGS"
+
 console.log( convertToUpperCamelCase( "lord of the rings" ) )
