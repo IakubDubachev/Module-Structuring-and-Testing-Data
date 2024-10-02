@@ -13,3 +13,9 @@
 
 // You will need to come up with an appropriate name for the function
 // Use the string documentation to help you find a solution
+
+const convertToUpperCamelCase = input => {
+    return input.split( ' ' ).map( str => str.toUpperCase() ).join( '_' );
+}
+
+console.log( convertToUpperCamelCase( "lord of the rings" ) )
