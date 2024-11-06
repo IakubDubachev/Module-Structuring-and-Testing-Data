@@ -5,7 +5,7 @@ const wholeNumberPart = Math.floor(num); // 56
 // Decimal part
 const decimalPart = num - wholeNumberPart; // 0.5678
 
-// Rounded number
+// Rounded number  
 const roundedNum = Math.round(num); // 57
 
 // Log the variables to the console
